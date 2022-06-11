@@ -1,0 +1,16 @@
+html{
+    height:100%;    /*we want to make the html and the body as big as the screen*/
+    overflow: hidden;   /*remove the scrollbar*/
+}
+body{   
+    display: flex;   /* this will make the header, body one, two and three as long with the footer flex items*/
+    flex-direction: column; /*we want them to stack atop each other*/
+    min-height:100%;
+}
+
+.body-one,.body-two, .body-three, .footer{
+    flex:1 auto ;   /*stretch the 4 flex items*/
+}
+
+
+
