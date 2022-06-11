@@ -1,11 +1,16 @@
 html{
-    height:100%;    /*we want to make the html and the body as big as the screen*/
+    width:100%; /*set height and width to 100% on the html*/
+    height:100%;    
     overflow: hidden;   /*remove the scrollbar*/
+    display:flex;   /*we will want to center exactly our body element inside of our page*/
+    justify-content: center;    /*this exactly centers our body element inside the html*/
+    align-items: center;
 }
 body{   
     display: flex;   /* this will make the header, body one, two and three as long with the footer flex items*/
     flex-direction: column; /*we want them to stack atop each other*/
     min-height:100%;
+    width: 80%; /*we want this in order to "leave out" some borders on the body"*/
 }
 
 .body-one,.body-two, .body-three, .footer{
