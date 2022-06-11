@@ -6,6 +6,7 @@ body{
     display: flex;   /* this will make the header, body one, two and three as long with the footer flex items*/
     flex-direction: column; /*we want them to stack atop each other*/
     min-height:100%;
+    margin:0;
 }
 
 .body-one,.body-two, .body-three, .footer{
@@ -17,10 +18,23 @@ body{
 .header{
     display: flex;
     background-color: #1f2937;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 .left-head{
-
+    color:#f9faf8;
+    font-size: 25px;
+    font-weight: 700;
 }
+
+.right-head ul li a{
+    color:#e5e7eb;
+}
+
+.right-head ul{
+    list-style:none;
+}
+
