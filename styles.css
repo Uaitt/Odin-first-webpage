@@ -16,12 +16,13 @@ body{
 /*header styling*/
 
 .header{
-    display: flex;
+    display: flex;  /*we want our header to be a flex container in order to space the left and right part*/
     background-color: #1f2937;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 120px;
-    padding-right: 120px;
+    justify-content: space-between; /*as I said, we want the 2 items (left div and right div) to be spaced apart*/
+    padding-left: 140px;    /*with those padding we will create some free space
+                              on the left-right with still the background color*/
+    padding-right: 140px;
 }
 
 .left-head{
@@ -30,11 +31,16 @@ body{
     font-weight: 700;
 }
 
+
 .right-head ul li a{
     color:#e5e7eb;
 }
 
 .right-head ul{
     list-style:none;
+    display: flex;  /*we want the ul to be a flex container, in order to arrange items in a row and space them*/
+    padding:0px;    /*REMEMBER that every ul has some default padding on the left*/
+    width:400px;    /*we increase the ul width (originally it was about 300px in order to space the 3 anchors*/
+    justify-content: space-around;  /*this will space all the 3 anchors*/
 }
 
