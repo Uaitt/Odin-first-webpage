@@ -98,3 +98,37 @@ body{
     align-items: center;
 }
 
+/* body two styling*/
+.body-two{
+    display: flex;  /*We want all our body-two to be a flex-container, so we can stack
+                      the h3 element and the cards (div container for cards) one atop each other*/
+    flex-direction: column;
+    align-items: center;    /*this will align items on the cross-axis, which is horizontally*/
+}
+
+.body-two h3{
+    color:#1f2937;
+    font-size: 36px;
+    font-weight: extra-bold;
+}
+
+.body-two .cards{
+    display:flex;   /*we also want our card container to be a flex container as well, in order to
+                     display the cards in a row and create some gap between them*/
+    gap:30px;
+    font-size:18px;
+}
+
+.body-two .cards img{
+    height: 150px;  /*given the fact that images are not loaded, we need to specify an height and a width,
+                      in order to see the border that we will apply later*/
+    width: 150px;
+    border:2px solid #3882f6;
+    border-radius: 10px;
+}
+
+.body-two .cards .text{
+    height:50px;
+    width:150px;
+}
+
