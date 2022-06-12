@@ -20,9 +20,9 @@ body{
     background-color: #1f2937;
     align-items: center;
     justify-content: space-between; /*as I said, we want the 2 items (left div and right div) to be spaced apart*/
-    padding-left: 140px;    /*with those padding we will create some free space
+    padding-left: 170px;    /*with those padding we will create some free space
                               on the left-right with still the background color*/
-    padding-right: 140px;
+    padding-right: 170px;
 }
 
 .left-head{
@@ -34,6 +34,7 @@ body{
 
 .right-head ul li a{
     color:#e5e7eb;
+    font-size:18px;
 }
 
 .right-head ul{
@@ -42,5 +43,57 @@ body{
     padding:0px;    /*REMEMBER that every ul has some default padding on the left*/
     width:400px;    /*we increase the ul width (originally it was about 300px in order to space the 3 anchors*/
     justify-content: space-around;  /*this will space all the 3 anchors*/
+}
+
+/*body one styling*/
+
+.body-one{
+    display:flex;
+    background-color: #1f2937;
+    padding-left: 170px;
+    padding-right:170px;
+}
+
+.body-one .left-body-one{
+    width:750px;
+    margin-top:40px;
+}
+.body-one h2{
+    font-weight:extra-bold;
+    font-size:45px;
+    color: #f9faf8;
+    margin:0;
+    width:400px;
+}
+
+.body-one p{
+    color:#e5e7eb;
+    font-size: 18px;
+    margin:0;
+    width:400px;
+}
+
+.body-one button{
+    background-color:#3882f6;
+    color:#f9faf8;
+    padding: 5px 20px;
+    margin-top: 7px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.right-body-one{
+    flex: 1;
+    color:#e5e7eb;
+    margin-top:40px;
+    font-size:18px;
+}
+
+.right-body-one .placeholder{
+    background-color: #6e768693;
+    height:182px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
