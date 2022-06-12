@@ -6,6 +6,7 @@ body{
     flex-direction: column; /*we want them to stack atop each other*/
     min-height:100%;
     margin:0;
+    font-family: 'Roboto';
 }
 
 .body-one,.body-two, .body-three, .footer{
@@ -162,4 +163,44 @@ body{
     font-size: 20px;
     margin-top:-20px;   /*this will bring the author closer to the quote*/
     align-self:flex-end;    /*we want the author to be at the end of its container (which means it will be on the right)*/
+}
+
+.footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:45px;
+}
+
+.footer .footer-container{
+    width: 820px;
+    background-color: #3882f6;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+    color: #f9faf8;
+    border-radius: 8px;
+
+}
+
+.footer .footer-container .footer-head{
+    font-weight:900;
+    font-size:22px;
+}
+
+.footer .footer-container .footer-text{
+    font-size:19x;
+}
+
+.footer .right-footer{
+    flex:1;
+    padding-left:300px;
+}
+.footer button{
+    background-color: #3882f6;
+    color:#f9faf8;
+    border-radius: 6px;
+    border: 1px solid #f9faf8;
+    padding: 5px 20px;   
 }
