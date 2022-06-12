@@ -1,6 +1,5 @@
 html{
     height:100%;    
-    overflow: hidden;   /*remove the scrollbar*/
 }
 body{   
     display: flex;   /* this will make the header, body one, two and three as long with the footer flex items*/
@@ -10,7 +9,7 @@ body{
 }
 
 .body-one,.body-two, .body-three, .footer{
-    flex:1 auto ;   /*stretch the 4 flex items*/
+    flex:1 ;   /*stretch the 4 flex items*/
 }
 
 /*header styling*/
@@ -28,7 +27,7 @@ body{
 .left-head{
     color:#f9faf8;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 
@@ -52,6 +51,7 @@ body{
     background-color: #1f2937;
     padding-left: 170px;
     padding-right:170px;
+    padding-bottom:50px;
 }
 
 .body-one .left-body-one{
@@ -104,12 +104,13 @@ body{
                       the h3 element and the cards (div container for cards) one atop each other*/
     flex-direction: column;
     align-items: center;    /*this will align items on the cross-axis, which is horizontally*/
+    margin-bottom:30px;
 }
 
 .body-two h3{
     color:#1f2937;
     font-size: 36px;
-    font-weight: extra-bold;
+    font-weight: 900;
 }
 
 .body-two .cards{
@@ -125,6 +126,7 @@ body{
     width: 150px;
     border:2px solid #3882f6;
     border-radius: 10px;
+
 }
 
 .body-two .cards .text{
@@ -132,3 +134,32 @@ body{
     width:150px;
 }
 
+/*body three styling*/
+
+.body-three{
+    background-color: #e5e7eb;
+    padding-bottom: 50px;   /*we want some padding on bottom in order to space a little bit the footer from our quote*/
+    display:flex;   /*we know that we want to center perfectly horizontally the quote, then we must wrap the quote in a container (class="quote-text")
+                      and then we have to make the body-three a flex container*/
+    justify-content: center;    /*then we can perfectly center the quote-text div (which is the only item inside of the body-three div)*/
+    align-items: center;
+}
+
+.body-three .text-quote{
+    display:flex;   /*we also want to make the text-quote container a flex container, then we can arrange items one atop each other with flex-direction*/
+    flex-direction: column;
+    max-width: 706px;   /*we use this because we want our text to be just as wide as the body-two card container (which is too 706px)*/
+}
+
+.body-three .quote{
+    font-size: 32px;
+    font-style: italic;
+    color:#575a5e;
+}
+
+.body-three .author{
+    font-weight: 900;
+    font-size: 20px;
+    margin-top:-20px;   /*this will bring the author closer to the quote*/
+    align-self:flex-end;    /*we want the author to be at the end of its container (which means it will be on the right)*/
+}
