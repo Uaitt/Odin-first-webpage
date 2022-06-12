@@ -169,22 +169,27 @@ body{
     align-self:flex-end;    /*we want the author to be at the end of its container (which means it will be on the right)*/
 }
 
+
+/*footer styling*/
+
 .footer{
-    display:flex;
-    justify-content: center;
+    display:flex;   /*first, as usual, we want our footer to be a flex container*/
+    justify-content: center;    /*in order to perfectly center vertically (cross-axis here) and 
+                                  horizontally(man-axis here) the other container*/
     align-items: center;
-    margin:45px;
+    margin:45px;    /*this will create blank space all around the blue container*/
 }
 
 .footer .footer-container{
-    width: 820px;
+    width: 820px;   /*we select a given width*/
     background-color: #3882f6;
-    display:flex;
+    display:flex;   /*this is a flex container as well*/
     align-items: center;
-    justify-content: space-between;
-    padding: 30px 60px;
+    justify-content: space-between; /*we want to space its 2 direct children (left-footer and right-footer)so they can 
+                                      be spaced away*/
+    padding: 30px 60px; /*this makes our container bigger*/
     color: #f9faf8;
-    border-radius: 8px;
+    border-radius: 8px; /*round borders*/
 
 }
 
@@ -199,7 +204,7 @@ body{
 
 .footer .right-footer{
     flex:1;
-    padding-left:300px;
+    padding-left:300px; /*moves our button a little bit*/
 }
 .footer button{
     background-color: #3882f6;
