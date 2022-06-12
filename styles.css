@@ -6,7 +6,7 @@ body{
     flex-direction: column; /*we want them to stack atop each other*/
     min-height:100%;
     margin:0;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 .body-one,.body-two, .body-three, .footer{
@@ -23,6 +23,7 @@ body{
     padding-left: 170px;    /*with those padding we will create some free space
                               on the left-right with still the background color*/
     padding-right: 170px;
+    padding-top:10px;
 }
 
 .left-head{
@@ -40,9 +41,9 @@ body{
 .right-head ul{
     list-style:none;
     display: flex;  /*we want the ul to be a flex container, in order to arrange items in a row and space them*/
-    padding:0px;    /*REMEMBER that every ul has some default padding on the left*/
-    width:400px;    /*we increase the ul width (originally it was about 300px in order to space the 3 anchors*/
-    justify-content: space-around;  /*this will space all the 3 anchors*/
+    padding:0;    /*REMEMBER that every ul has some default padding on the left*/
+    width:500px;    /*we increase the ul width (originally it was about 300px in order to space the 3 anchors*/
+    justify-content: space-between;  /*this will space all the 3 anchors*/
 }
 
 /*body one styling*/
@@ -52,12 +53,13 @@ body{
     background-color: #1f2937;
     padding-left: 170px;
     padding-right:170px;
-    padding-bottom:50px;
+    padding-bottom:65px;
 }
 
 .body-one .left-body-one{
     width:750px;
     margin-top:40px;
+    margin-bottom:30px;
 }
 .body-one h2{
     font-weight:extra-bold;
@@ -65,6 +67,7 @@ body{
     color: #f9faf8;
     margin:0;
     width:400px;
+    margin-bottom:10px;
 }
 
 .body-one p{
@@ -72,6 +75,7 @@ body{
     font-size: 18px;
     margin:0;
     width:400px;
+    margin-bottom:10px;
 }
 
 .body-one button{
@@ -93,7 +97,7 @@ body{
 
 .right-body-one .placeholder{
     background-color: #6e768693;
-    height:182px;
+    height:212px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +109,7 @@ body{
                       the h3 element and the cards (div container for cards) one atop each other*/
     flex-direction: column;
     align-items: center;    /*this will align items on the cross-axis, which is horizontally*/
-    margin-bottom:30px;
+    margin-bottom:65px;
 }
 
 .body-two h3{
