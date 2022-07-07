@@ -3,7 +3,6 @@ Landing webpage for The Odin Project curriculum.\
 Live preview the webpage [here](https://uaitt.github.io/Odin-first-webpage/).
 
 Things I have learned:
-
 1) CSS
    - Use the flex styling method in order to arrange items inside of flex-containers
      - Use the flex property on the flex-items
