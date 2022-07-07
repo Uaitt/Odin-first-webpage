@@ -11,8 +11,7 @@ Things I have learned:
    - Manage and understand the box model using margin ,padding, border, width and height
    - Remove bullets from lists
    - Round buttons borders
-   - Link to an external non standard font style
-   
+   - Link to an external non standard font style   
 2) HTML
    - Assign descriptive classes and ids to elements
    - Wrap main parts of the web page with divs elements in order to\
